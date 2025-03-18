@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Accesible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cargar Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+ <!-- Header -->
+ <header class="bg-blue-900 text-white py-4 px-6 flex justify-between items-center" role="banner">
+    <!-- Logo y Nombre -->
+    <div class="flex items-center gap-4">
+        <img src="../img/Logo.png" alt="Logo" class="w-12">
+        <a href="index.html"><h1 class="text-2xl font-bold text-center flex-1">E-MOTIONCARS</h1></a>
+    </div>
+    
+    <nav role="navigation" aria-label="Menú principal" class="flex items-center gap-6">
+        <!-- Ícono de usuario -->
+        <a href="iniciosesion.html" class="text-white text-2xl" aria-label="Iniciar sesión">
+            <i class="fas fa-user"></i>
+        </a>
+        
+        <!-- Ícono de configuración -->
+        <a href="../html/about.html" class="text-white text-2xl" aria-label="Configuración">
+            <i class="fas fa-cog"></i>
+        </a>
+        
+        <!-- Segundo botón de menú -->
+        <button id="menuButton" class="text-white text-2xl" aria-label="Abrir menú secundario">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<!-- Menu Desplegable -->
+<div id="menu" class="hidden absolute top-14 right-0 mt-4 w-48 bg-blue-900 text-white shadow-lg rounded-md transition-all ease-in-out transform scale-95 origin-top-right z-10">
+    <ul class="p-4">
+        <li><a href="../index.html" class="block py-2 px-4">Inicio</a></li>
+        <li><a href="../html/Marcas/ferrari.html" class="block py-2 px-4">Ferrari</a></li>
+        <li><a href="#" class="block py-2 px-4">Porsche</a></li>
+        <li><a href="../html/Marcas/audi.html" class="block py-2 px-4">Audi</a></li>
+        <li><a href="#" class="block py-2 px-4">Aston Martin</a></li>
+        <li><a href="#" class="block py-2 px-4">Mercedes</a></li>
+        <li><a href="../html/Marcas/bmw.html" class="block py-2 px-4">BMW</a></li>
+        <li><a href="../html/contacto.html" class="block py-2 px-4">Contacto</a></li>
+    </ul>
+</div>
+
+<main class="p-4" role="main">
+    <!-- Hero Section -->
+    <section class="relative mb-6" aria-labelledby="hero-title">
+        <h2 id="hero-title" class="sr-only">Imagen destacada</h2>
+        <img src="../img/escaparate.jpg" alt="Coche clásico en una carretera escénica" class="w-full h-[500px] object-cover brightness-75">
+        <!-- Texto de bienvenida sobre la imagen -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6">
+            <h2 class="text-5xl font-extrabold drop-shadow-lg">Revive la Época Dorada del Automóvil</h2>
+            <p class="mt-4 text-xl max-w-2xl drop-shadow-md">
+                Descubre nuestra colección de coches clásicos y siente la elegancia, el poder y la historia en cada modelo.
+            </p>
+        </div>
+    </section>
+</main>
+
+<!-- Logos Section -->
+<section class="py-4">
+    
+    <div class="flex flex-wrap justify-center gap-14 items-center">
+        <a href="../html/Marcas/ferrari.html" aria-label="Ir a Ferrari">
+            <img src="../img/ferrarilogo.png" alt="Logo de Ferrari" class="w-24 h-30 hover:scale-110 transition-transform">
+        </a>
+        <a href="../html/Marcas/audi.html" aria-label="Ir a Audi">
+            <img src="../img/audilogo.png" alt="Logo de Audi" class="w-24 h-24 hover:scale-110 transition-transform">
+        </a>
+        <a href="../html/Marcas/bmw.html" aria-label="Ir a BMW">
+            <img src="../img/bmwlogo.png" alt="Logo de BMW" class="w-24 h-24 hover:scale-110 transition-transform">
+        </a>
+        <a href="#" aria-label="Ir a Porsche">
+            <img src="../img/porschelogo.png" alt="Logo de Porsche" class="w-23 h-24 hover:scale-110 transition-transform">
+        </a>
+        <a href="../html/Marcas/mercedes.html" aria-label="Ir a Mercedes-Benz">
+            <img src="../img/mercedeslogo.png" alt="Logo de Mercedes-Benz" class="w-24 h-24 hover:scale-110 transition-transform">
+        </a>
+        <a href="#" aria-label="Ir a Aston Martin">
+            <img src="../img/astonlogo.png" alt="Logo de Aston Martin" class="w-30 h-20 hover:scale-110 transition-transform">
+        </a>
+    </div>
+</section>
+
+    <!-- Featured Article -->
+    <h1 class="text-3xl font-bold ml-6">Coche Del Mes</h1>
+    <div class="flex justify-center items-center mt-12 mb-12">
+        <section class="flex flex-col md:flex-row gap-6 items-center p-6 shadow-[0_4px_10px_rgba(255,215,0,0.5)] max-w-4xl" >
+            <!-- Imagen del artículo destacado -->
+            <div class=" bg-gray-300">
+                <img src="../img/Porsche911_1973.jpg" alt="Porsche 911 de 1973 en exhibición" class="w-full h-full ">
+            </div>
+            <!-- Texto del artículo destacado -->
+            <div class="flex flex-col justify-center text-center md:text-left">
+                <a href="articulodestacado.html" id="featured-title" class="text-2xl font-extrabold text-blue-900 hover:text-blue-700 transition-colors mb-2">
+                    Porsche 911 (1973) - Una Leyenda en la Carretera
+                </a>
+                <p class="text-gray-700 text-base leading-relaxed">
+                    Elegancia, potencia y legado: el Porsche 911 de 1973 sigue siendo un referente en el mundo de los coches clásicos.  
+                    Con su icónico motor trasero y diseño aerodinámico, marcó una era en la historia del automovilismo.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gallery -->
+    <h1 class="text-3xl font-bold ml-6">Galeria</h1>
+    <section class="p-14">
+        <div class="grid grid-cols-3 ">
+            <div class="col-span-2  overflow-hidden">
+                <img src="../img/audi100.jpg" alt="Coche clásico rojo" class="w-full h-full object-cover">
+            </div>
+            <div class="col-span-1 row-span-1">
+                <img src="../img/bmwinicio.webp" alt="Coche clásico descapotable" class="w-full h-full object-cover ">
+            </div>
+            <div class="col-span-1 row-span-1">
+                <img src="../img/mercedes190.jpg" alt="Ferrari clásico" class="w-full h-full object-cover ">
+            </div>
+            <div class="col-span-1 row-span-1">
+                <img src="../img/ferrarif40clasico.jpg" alt="Coche clásico rojo antiguo" class="w-full h-full object-cover ">
+            </div>
+            <div class="col-span-1 row-span-1">
+                <img src="../img/porsche911_1973_6.jpg" alt="Coches alineados" class="w-full h-full object-cover ">
+            </div>
+            <div class="col-span-1 row-span-1">
+                <img src="../img/alfaromeo_giulia.jpg" alt="Porsche en la playa" class="w-full h-full object-cover ">
+            </div>
+            <div class="col-span-2 row-span-1">
+                <img src="../img/jaguare-type.jpg" alt="Chevrolet clásico azul" class="w-full h-full object-cover ">
+            </div>
+        </div>
+        <div class="text-right mt-4">
+            <a href="#" class="text-blue-600 font-semibold hover:underline">Más Imágenes →</a>
+        </div>
+    </section>
+
+
+<div  class="bg-gray-100 p-8"></div>
+<h1 class="text-3xl font-bold mb-6 ml-6">Artículos</h1>
+<div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 shadow-md rounded-lg max-w-xs mx-auto">
+            <div class="w-full h-48 flex items-center justify-center">
+                <img src="../img/Dodge-Challenger-TA.jpg" alt="Artículo 1" class="w-full h-full object-contain rounded">
+            </div>
+            <p class="mt-2 text-gray-700 text-center">El Jabiat Racer es único en su tipo con una aerodinámica avanzada.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg max-w-xs mx-auto">
+            <div class="w-full h-48 flex items-center justify-center">
+                <img src="../img/SubaruImpreza.jpg" alt="Artículo 2" class="w-full h-full object-contain rounded">
+            </div>
+            <p class="mt-2 text-gray-700 text-center">El Subaru Impreza WRC fue dominante en los rallys de los años 90.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg max-w-xs mx-auto">
+            <div class="w-full h-48 flex items-center justify-center">
+                <img src="../img/LamboGuapo.jpg" alt="Artículo 3" class="w-full h-full object-contain rounded">
+            </div>
+            <p class="mt-2 text-gray-700 text-center">El legendario Lamborghini Countach con su motor V12.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg max-w-xs mx-auto">
+            <div class="w-full h-48 flex items-center justify-center">
+                <img src="../img/Citroen2Cv.png" alt="Artículo 4" class="w-full h-full object-contain rounded">
+            </div>
+            <p class="mt-2 text-gray-700 text-center">El Citroën 2CV, un coche icónico de la posguerra.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg max-w-xs mx-auto">
+            <div class="w-full h-48 flex items-center justify-center">
+                <img src="../img/Volkswagen1300.avif" alt="Artículo 5" class="w-full h-full object-contain rounded">
+            </div>
+            <p class="mt-2 text-gray-700 text-center">El Volkswagen Beetle 1300, un símbolo de la ingeniería alemana.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg max-w-xs mx-auto">
+            <div class="w-full h-48 flex items-center justify-center">
+                <img src="../img/mustangClasico.jpg" alt="Artículo 6" class="w-full h-full object-contain rounded">
+            </div>
+            <p class="mt-2 text-gray-700 text-center">El Ford Mustang, un clásico del muscle car americano.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white p-10 mt-6" role="contentinfo">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start">
+        <!-- Sección izquierda: Nombre y Licencia -->
+        <div class="md:w-1/3">
+            <div class="flex items-center gap-4">
+                <img src="../img/Logo.png" alt="Logo" class="w-12">
+                <a href="index.html"><h1 class="text-2xl font-bold text-center flex-1">E-MOTIONCARS</h1></a>
+            </div>
+            <p class="text-xs mt-2">&copy; 2025 E-MOTIONCARS. Todos los derechos reservados.</p>
+        </div>
+        
+        <!-- Sección derecha: Redes Sociales, Contacto y Políticas -->
+        <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6 text-right">
+            <!-- Redes Sociales -->
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-bold mb-2">Síguenos</p>
+                <a href="https://www.facebook.com" target="_blank" class="text-white text-sm mb-1">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white text-sm mb-1">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white text-sm">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+            
+            <!-- Contacto -->
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-bold mb-2">Contacto</p>
+                <p class="text-sm">📞 +34 123 456 789</p>
+                <p class="text-sm">📍 Calle Falsa 123, Madrid, España</p>
+                <p class="text-sm">✉ contacto@gmail.com</p>
+            </div>
+            
+            <!-- Políticas -->
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-bold mb-2">Información Legal</p>
+                <a href="#" class="text-sm">Política de Privacidad</a>
+                <a href="#" class="text-sm">Configuración de Cookies</a>
+                <a href="#" class="text-sm">Condiciones de Compra</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    // Script para abrir y cerrar el menú
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+    
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('hidden'); // Muestra u oculta el menú
+        menu.classList.toggle('scale-95'); // Efecto de escala
+    });
+</script>
+
+</body>
+</html>

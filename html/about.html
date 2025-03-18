@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Accesible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cargar Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+ <!-- Header -->
+ <header class="bg-blue-900 text-white py-4 px-6 flex justify-between items-center" role="banner">
+    <!-- Logo y Nombre -->
+    <div class="flex items-center gap-4">
+        <img src="../img/Logo.png" alt="Logo" class="w-12">
+        <a href="index.html"><h1 class="text-2xl font-bold text-center flex-1">E-MOTIONCARS</h1></a>
+    </div>
+    
+    <nav role="navigation" aria-label="Menú principal" class="flex items-center gap-6">
+        <!-- Ícono de usuario -->
+        <a href="iniciosesion.html" class="text-white text-2xl" aria-label="Iniciar sesión">
+            <i class="fas fa-user"></i>
+        </a>
+        
+        <!-- Ícono de configuración -->
+        <a href="../html/about.html" class="text-white text-2xl" aria-label="Configuración">
+            <i class="fas fa-cog"></i>
+        </a>
+        
+        <!-- Segundo botón de menú -->
+        <button id="menuButton" class="text-white text-2xl" aria-label="Abrir menú secundario">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<!-- Menu Desplegable -->
+<div id="menu" class="hidden absolute top-14 right-0 mt-4 w-48 bg-blue-900 text-white shadow-lg rounded-md transition-all ease-in-out transform scale-95 origin-top-right z-10">
+    <ul class="p-4">
+        <li><a href="../index.html" class="block py-2 px-4">Inicio</a></li>
+        <li><a href="../html/Marcas/ferrari.html" class="block py-2 px-4">Ferrari</a></li>
+        <li><a href="#" class="block py-2 px-4">Porsche</a></li>
+        <li><a href="../html/Marcas/audi.html" class="block py-2 px-4">Audi</a></li>
+        <li><a href="#" class="block py-2 px-4">Aston Martin</a></li>
+        <li><a href="#" class="block py-2 px-4">Mercedes</a></li>
+        <li><a href="../html/Marcas/bmw.html" class="block py-2 px-4">BMW</a></li>
+        <li><a href="../html/contacto.html" class="block py-2 px-4">Contacto</a></li>
+    </ul>
+</div>
+
+    <main class="p-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+            <img src="../img/image.png" alt="Car Dashboard" class="rounded-lg shadow-md">
+            
+            <ul class="space-y-2 text-gray-700">
+                <li class="text-gray-700 flex-1">
+                    Algunas de las principales características que nos diferencian del resto de empresas del sector y que nos convierten en la principal elección de nuestros clientes.
+                </li>
+                <li><strong>•</strong> Procesos llave en mano.</li>
+                <li><strong>•</strong> Experiencia validada.</li>
+                <li><strong>•</strong> Transparencia en todos los procesos.</li>
+                <li><strong>•</strong> Calidad, garantía y seguridad.</li>
+                <li><strong>•</strong> Apoyo permanente.</li>
+                <li><strong>•</strong> Presentación de las mejores soluciones.</li>
+                <li><strong>•</strong> Todos los servicios en un solo lugar.</li>
+            </ul>
+            
+        </div>
+        <div class="mt-6 flex flex-col md:flex-row items-center gap-6">
+            <p class="text-gray-700 flex-1">
+                Somos una empresa especializada en todas las ramas del sector de la automoción. Nuestra fórmula del éxito se basa en la atención personalizada que le damos al cliente en todo momento, pero haciendo especial hincapié en el servicio pos-venta. Disponemos de servicios adicionales como financiación, seguros, talleres y trámites oficiales para su coche.
+            </p>
+            <img src="../img/image2.png" alt="Car Front" class="rounded-lg shadow-md w-full md:w-1/3">
+        </div>
+    </main>
+
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white p-10 mt-6" role="contentinfo">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start">
+        <!-- Sección izquierda: Nombre y Licencia -->
+        <div class="md:w-1/3">
+            <div class="flex items-center gap-4">
+                <img src="../img/Logo.png" alt="Logo" class="w-12">
+                <a href="index.html"><h1 class="text-2xl font-bold text-center flex-1">E-MOTIONCARS</h1></a>
+            </div>
+            <p class="text-xs mt-2">&copy; 2025 E-MOTIONCARS. Todos los derechos reservados.</p>
+        </div>
+        
+        <!-- Sección derecha: Redes Sociales, Contacto y Políticas -->
+        <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6 text-right">
+            <!-- Redes Sociales -->
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-bold mb-2">Síguenos</p>
+                <a href="https://www.facebook.com" target="_blank" class="text-white text-sm mb-1">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white text-sm mb-1">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white text-sm">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+            
+            <!-- Contacto -->
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-bold mb-2">Contacto</p>
+                <p class="text-sm">📞 +34 123 456 789</p>
+                <p class="text-sm">📍 Calle Falsa 123, Madrid, España</p>
+                <p class="text-sm">✉ contacto@gmail.com</p>
+            </div>
+            
+            <!-- Políticas -->
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-bold mb-2">Información Legal</p>
+                <a href="#" class="text-sm">Política de Privacidad</a>
+                <a href="#" class="text-sm">Configuración de Cookies</a>
+                <a href="#" class="text-sm">Condiciones de Compra</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    // Script para abrir y cerrar el menú
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+    
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('hidden'); // Muestra u oculta el menú
+        menu.classList.toggle('scale-95'); // Efecto de escala
+    });
+</script>
+
+</body>
+</html>
